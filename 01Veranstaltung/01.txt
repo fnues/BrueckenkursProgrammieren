@@ -1,3 +1,0 @@
-Variablen und Datentypen
-Operatoren
-Arrays
