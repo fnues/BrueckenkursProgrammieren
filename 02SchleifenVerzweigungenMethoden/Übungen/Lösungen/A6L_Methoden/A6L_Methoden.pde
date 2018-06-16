@@ -26,7 +26,10 @@ float average(float one, float two, float three, float four){
 }
 // möglichkeit 2
 float average(int one, int two, int three, int four){
-  
+  // Eine Berechnung wird im grössten involvierten Typ umgewandelt gemacht.
+  // wenn wir hier durch 4 (int) teilen anstatt durch 4.0 (float) würde die
+  // ganze Berechnung in int stattfinden und deshalb alles immer auf runde 
+  // Zahlen gerundet werden.
   return (one + two + three + four)/4.0;
 }
 // möglichkeit 3
