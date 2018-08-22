@@ -41,4 +41,13 @@ class PlayField {
     }
     return false;
   }
+  
+  
+    int getWidth(){
+    return (int)(nrOfElementsWidht*rectSize+2*rectSize);
+  }
+  
+  int getHeight(){
+    return (int)(nrOfElementsHeight*rectSize+2*rectSize);
+  }
 }

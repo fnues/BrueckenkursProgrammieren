@@ -3,7 +3,9 @@ Pacman pac;
 PlayField field;
 
 void settings() {
-  size(400, 400);
+    field = new PlayField(rectSize);
+
+  size(field.getWidth(), field.getHeight());
 }
 
 
@@ -12,7 +14,6 @@ void setup() {
 
   // erstelle pacman
   pac = new Pacman(width/2, height/2, rectSize);
-  field = new PlayField(rectSize);
 }
 
 
