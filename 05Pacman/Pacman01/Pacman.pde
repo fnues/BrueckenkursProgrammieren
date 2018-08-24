@@ -45,4 +45,8 @@ class Pacman{
     float getSize(){
         return diam;
     }
+    
+    float getSpeed(){
+       return speed; 
+    }
 }
