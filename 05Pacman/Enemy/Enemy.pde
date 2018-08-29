@@ -1,11 +1,16 @@
 class Enemy{
+  // Attribute für die Postition
   float x;
   float y;
+  // Attribute für die Bewegung in x und y Richtung
   int deltaX;
   int deltaY;
+  // Attribut für die Geschwindigkeit der Bewegung
   float speed = 1;
+  // Länge und Breite
   float enLength = 30;
   float enWidth = 25;
+  // Referenz zum Playfield und den Hindernissen
   PlayField obstaclesField;
   
   Enemy(float x, float y, float rectSize, PlayField field){
