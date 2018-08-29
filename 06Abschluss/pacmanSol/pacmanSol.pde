@@ -93,10 +93,7 @@ void keyPressed() {
   }
 
 
-  if ( field.isOneNuggetEaten(pac.getX()-pac.getSize()/2, pac.getY()) || 
-      field.isOneNuggetEaten(pac.getX()+pac.getSize()/2, pac.getY()) ||
-      field.isOneNuggetEaten(pac.getX(), pac.getY()-pac.getSize()/2) ||
-      field.isOneNuggetEaten(pac.getX(), pac.getY()+pac.getSize()/2) ) {
+  if ( field.isOneNuggetEaten(pac.getX(), pac.getY()) ) {
     score++;
   }
 }

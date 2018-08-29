@@ -21,7 +21,7 @@ class Nugget {
 
 
   boolean getsEaten(float x, float y) {
-    return ( isVisible && x >= this.x-size && x <= this.x+size*2 && y >= this.y-size && y <= this.y+size*2 );
+    return ( isVisible && x >= this.x-rectSize/2 && x <= this.x+rectSize/2 && y >= this.y-rectSize/2 && y <= this.y+rectSize/2 );
   }
 
   void setVisible(boolean visible) {
